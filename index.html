@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+<style>
+
+
+
+.accordion {
+  background-color: maroon;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: MidnightBlue;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid maroon;
+  padding: 10px;
+}
+body {
+  background-color: linen;
+}
+h1 ,h2 {
+  color: maroon;
+  text-align: center;
+  border: 2px maroon solid;
+}
+h3 {
+  color:MidnightBlue;
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+
+  <div class="center">
+    <p><b></b></p>
+
+<h1>Gabriella Rich</h1>
+
+
+
+     <h2>602-469-5969</h2>
+    <p><b><a href="https://goo.gl/maps/4rcutk5kuVXPJCo38"><p style="text-align:center" color: maroon> 6131 N. 16th Street Phoenix, AZ</a></b></p>
+
+      <p style="text-align:center;"></p>
+
+<img src="https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/20140015_10154888441527602_6701815976528215890_n.jpg?_nc_cat=110&_nc_oc=AQlDrzL2Fx4NDztn450fD9Hb9X9Ybh2VMrVRCEZwl_QI5iipoP6o1pNMQNe6JZtDWRS0Z8EBj0SPY7WX7x6BNjVI&_nc_ht=scontent.fphx1-1.fna&oh=e06d4703d1c3b08026805ad389ed1680&oe=5DF76110" alt="facebook.com" width="300" height="300">
+
+
+<p></p>
+<button class="accordion">OBJECTIVE</button>
+<div class="panel">
+  <p>To create brilliant works of art.</p>
+</div>
+<button class="accordion">EXPERIENCE</button>
+<div class="panel">
+  <p>  Joey Leyva-Audio Engineer
+  Interned with Mr. Leyva back in 2013. Successfully assisted him with mastering various productions like a cover of Killing Me Softly.</p>
+</div>
+
+
+<button class="accordion">EDUCATION</button>
+<div class="panel">
+
+<p> Scottsdale Community College 2013-present
+Worked on multiple songs weekly. Mixed and mastered songs like Bohemian Rhapsody and Liztomania.</p>
+
+
+<p>Arizona State University- Tempe, Arizona - DIGITAL CULTURE Jan 2018-Present</p>
+
+  <p> Scottsdale Community College- Scottsdale, Arizona- MUSIC BUSINESS,  2017</p>
+</div>
+
+  <button class="accordion">SKILLS</button>
+
+<div class="panel">
+
+  <p> Pro Tools, Max MSP, X Code , Unity, Abelton, and more. </p>
+</div>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+
+      </body>
+
+
+
+</html>
