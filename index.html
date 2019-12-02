@@ -1,0 +1,302 @@
+<!doctype html>
+
+<html>
+<head>
+  <link href="css/style.css" type="text/css" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+<style>
+.accordion {
+  background-color: maroon;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: MidnightBlue;
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+/* visited link */
+a:visited {
+  color: green;
+}
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+/* selected link */
+a:active {
+  color: blue;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid maroon;
+  padding: 10px;
+}
+
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #868e96;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #BD5D38;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+  background-color: #BD5D38 !important;
+}
+
+.text-primary {
+  color: #BD5D38 !important;
+}
+/*
+
+*/
+
+</style>
+</head>
+
+<body>
+
+
+  <div class="center">
+    <p><b></b></p>
+
+<h1>Gabriella Rich</h1>
+
+
+
+     <h2>602-469-5969</h2>
+    <p><b><a href="https://goo.gl/maps/4rcutk5kuVXPJCo38"><p style="text-align:center" color: maroon> 6131 N. 16th Street Phoenix, AZ</a></b></p>
+
+      <p style="text-align:center;"></p>
+
+<img src="https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/20140015_10154888441527602_6701815976528215890_n.jpg?_nc_cat=110&_nc_oc=AQlDrzL2Fx4NDztn450fD9Hb9X9Ybh2VMrVRCEZwl_QI5iipoP6o1pNMQNe6JZtDWRS0Z8EBj0SPY7WX7x6BNjVI&_nc_ht=scontent.fphx1-1.fna&oh=e06d4703d1c3b08026805ad389ed1680&oe=5DF76110" alt="facebook.com" width="300" height="300">
+
+
+<p></p>
+<button class="accordion">OBJECTIVE</button>
+<div class="panel">
+  <p>To create brilliant works of art.</p>
+</div>
+<button class="accordion">EXPERIENCE</button>
+<div class="panel">
+  <p>  Joey Leyva-Audio Engineer
+  Interned with Mr. Leyva back in 2013. Successfully assisted him with mastering various productions like a cover of Killing Me Softly.</p>
+</div>
+
+
+<button class="accordion">EDUCATION</button>
+<div class="panel">
+
+<p> Scottsdale Community College 2013-present
+Worked on multiple songs weekly. Mixed and mastered songs like Bohemian Rhapsody and Liztomania.</p>
+
+
+<p>Arizona State University- Tempe, Arizona - DIGITAL CULTURE Jan 2018-Present</p>
+
+  <p> Scottsdale Community College- Scottsdale, Arizona- MUSIC BUSINESS,  2017</p>
+</div>
+
+  <button class="accordion">SKILLS</button>
+
+<div class="panel">
+
+  <p> Pro Tools, Max MSP, X Code , Unity, Abelton, and more. </p>
+</div>
+
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+
+
+      </body>
+
+
+
+</html>
